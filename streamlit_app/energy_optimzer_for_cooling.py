@@ -8,7 +8,8 @@ import plotly.graph_objects as go
 # configuring the page
 st.set_page_config(
     page_title="Decentralised Cooling Systems Optimizer",
-    page_icon="❄️"
+    page_icon="❄️",
+    layout="centered"
 )
 
 # adding custom CSS
@@ -167,6 +168,7 @@ with col2:
     
 
     st.plotly_chart(fig, width="stretch")
+
 
 
 
