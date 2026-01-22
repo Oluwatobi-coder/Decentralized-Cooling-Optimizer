@@ -121,7 +121,7 @@ with col1:
         f"IMPACT (MW) - {n_units:,} units": ["0.000 MW", f"{impact_shed_mw:+.3f} MW"],
         "STATUS": ["BASELINE", status_shed]
     })
-    st.table(results_df.to_pandas())
+    st.table(results_df.astype(str))
 
     st.markdown("#### **Grid Demand Summary**")
     st.write(f"📉 **Load-Shed Capacity:** `{flex_down_pct:+.2f}%` shift in demand potential.")
@@ -168,3 +168,4 @@ with col2:
     
 
     st.plotly_chart(fig, width="stretch")
+
