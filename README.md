@@ -1,6 +1,6 @@
 # Data-Driven Optimization of Residential Cooling Systems for a Decentralised Grid
 
-[Open the Decentralised Cooling Systems Optimizer Tool❄️](https://your-streamlit-app-link.streamlit.app/)
+[Open the Decentralised Cooling Systems Optimizer Tool❄️](https://decentralized-cooling-optimizer.streamlit.app/)
 
 
 This project presents a predictive modeling and aggregation framework designed to determine the flexibility of residential cooling systems within a decentralised grid architecture. By using machine learning, the study models the power consumption of 3-ton residential heat pumps operated in cooling mode across a wide range of outside temperature (23.9°C to 46.1°C), and two indoor temperature setpoints: 22.22°C (baseline) and 24.44°C (load-shed).
@@ -149,3 +149,4 @@ Wang, Z., & Srinivasan, R. S. (2016). A review of artificial intelligence based 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
 
 If you find this work for your research, please ⭐ the repository!
+
