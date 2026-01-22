@@ -22,7 +22,7 @@ In decentralized grids, residential cooling demand closely tracks rising outdoor
 
 * **Thermodynamic Saturation Detection:** Automatically detects the ambient temperature (approx. 34°C) where the grid relief potential of the cooling units turn negative or inelastic.
 * **Non-Linear Power Modeling:** Uses XGBoost ($R^2=0.89$) to capture the non-linearities in Coefficient of Performance (COP) that linear models miss.
-* **Scenario Analysis Engine:** Simulates grid impact for "Baseline" (22.2°C) vs. "Load Shed" (24.4°C) scenarios across a sliding temperature scale.
+* **Scenario Analysis Engine:** Simulates grid impact for Baseline (22.2°C) vs. Load Shed (24.4°C) scenarios across a sliding temperature scale.
 * **Scalability:** Instantly scales predictions from a single cooling unit to a several units.
 
 ## 📂 Dataset
@@ -99,7 +99,7 @@ To launch the Digital Twin dashboard locally:
 1. Navigate to the root directory.
 2. Run the Streamlit command:
 ```bash
-streamlit run ./streamlit_app/energy_optimzer_for cooling.py
+streamlit run ./streamlit_app/energy_optimzer_for_cooling.py
 
 ```
 
@@ -111,15 +111,15 @@ streamlit run ./streamlit_app/energy_optimzer_for cooling.py
 
 | Metric | Linear Regression | XGBoost |
 | --- | --- | --- |
-| **MAE** | ±210.54 W | **±56.21 W** |
-| ** Score** | 0.55 | **0.89** |
+| **MAE** | ±210.54 W | ±56.21 W |
+| **Score** | 0.55 | 0.89 |
 
 * **The Saturation Point:** The table below (visualized in the app) shows why 34°C is the critical limit for grid operators.
 
-| Outdoor Temp | Grid Relief (1k Cooling Units) | Grid Flexibility Status |
+| Outdoor Temp | Grid Relief (1000 Cooling Units) | Grid Flexibility Status |
 | --- | --- | --- |
-| **31°C** | **-0.095 MW** | Effective (-3.29%) |
-| **34°C** | **+0.033 MW** | Saturated (+1.13%) |
+| **31°C** | -0.095 MW | Effective (-3.29%) |
+| **34°C** | +0.033 MW | Saturated (+1.13%) |
 
 ## 🤝 Contributing
 
@@ -149,4 +149,5 @@ Wang, Z., & Srinivasan, R. S. (2016). A review of artificial intelligence based 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
 
 If you find this work for your research, please ⭐ the repository!
+
 
