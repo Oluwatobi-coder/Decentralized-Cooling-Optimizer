@@ -163,11 +163,13 @@ with col2:
         yaxis_title="Aggregated Power (kW)",
         template="plotly_white",
         height=410,
+        width=400,
         showlegend=False
     )
     
 
     st.plotly_chart(fig, width="content")
+
 
 
 
