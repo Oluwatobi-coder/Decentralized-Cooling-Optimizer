@@ -9,13 +9,13 @@ import plotly.graph_objects as go
 st.set_page_config(
     page_title="Decentralised Cooling Systems Optimizer",
     page_icon="❄️",
-    layout="centered"
+    layout="wide"
 )
 
 # adding custom CSS
 st.markdown("""
     <style>
-    .reportview-container .main .block-container{ max-width: 1000px; }
+    .reportview-container .main .block-container{ max-width: 1200px; }
     .stTable { font-size: 1.1rem; }
     </style>
     """, unsafe_allow_html=True)
@@ -167,7 +167,8 @@ with col2:
     )
     
 
-    st.plotly_chart(fig, width="stretch")
+    st.plotly_chart(fig, width="content")
+
 
 
 
