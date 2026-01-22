@@ -15,7 +15,7 @@ st.set_page_config(
 # adding custom CSS
 st.markdown("""
     <style>
-    .reportview-container .main .block-container{ max-width: 1200px; }
+    .reportview-container .main .block-container{ max-width: 1000px; }
     .stTable { font-size: 1.1rem; }
     </style>
     """, unsafe_allow_html=True)
@@ -168,6 +168,7 @@ with col2:
     
 
     st.plotly_chart(fig, width="stretch")
+
 
 
 
